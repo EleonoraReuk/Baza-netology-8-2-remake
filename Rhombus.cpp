@@ -8,15 +8,15 @@ Rhombus::Rhombus(int side, int A, int B)
 void Rhombus::validate() const {
     Quadrilateral::validate();
     if (a != b || b != c || c != d) {
-        throw FigureException("Ромб", "Все стороны должны быть равны");
+        throw FigureException("Р РѕРјР±", "Р’СЃРµ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
     if (A != C || B != D) {
-        throw FigureException("Ромб", "Противоположные углы должны быть равны");
+        throw FigureException("Р РѕРјР±", "РџСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅС‹Рµ СѓРіР»С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
 }
 
 void Rhombus::print_info() const {
-    std::cout << "Ромб:" << std::endl;
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
+    std::cout << "Р РѕРјР±:" << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
 }
