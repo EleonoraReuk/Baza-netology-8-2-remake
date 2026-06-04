@@ -3,7 +3,7 @@
 #include <iostream>
 
 Triangle::Triangle(int a, int b, int c, int A, int B, int C)
-    : Figure("Треугольник"), a(a), b(b), c(c), A(A), B(B), C(C) {
+    : Figure("РўСЂРµСѓРіРѕР»СЊРЅРёРє"), a(a), b(b), c(c), A(A), B(B), C(C) {
     validate();
 }
 
@@ -21,19 +21,19 @@ bool Triangle::check_sum_angles() const {
 
 void Triangle::validate() const {
     if (!check_sides()) {
-        throw FigureException(name, "Стороны не удовлетворяют неравенству треугольника или имеют неположительное значение");
+        throw FigureException(name, "РЎС‚РѕСЂРѕРЅС‹ РЅРµ СѓРґРѕРІР»РµС‚РІРѕСЂСЏСЋС‚ РЅРµСЂР°РІРµРЅСЃС‚РІСѓ С‚СЂРµСѓРіРѕР»СЊРЅРёРєР° РёР»Рё РёРјРµСЋС‚ РЅРµРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ");
     }
     if (!check_angles()) {
-        throw FigureException(name, "Углы должны быть положительными и меньше 180 градусов");
+        throw FigureException(name, "РЈРіР»С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё Рё РјРµРЅСЊС€Рµ 180 РіСЂР°РґСѓСЃРѕРІ");
     }
     if (!check_sum_angles()) {
-        throw FigureException(name, "Сумма углов должна равняться 180 градусов (текущая сумма: " +
+        throw FigureException(name, "РЎСѓРјРјР° СѓРіР»РѕРІ РґРѕР»Р¶РЅР° СЂР°РІРЅСЏС‚СЊСЃСЏ 180 РіСЂР°РґСѓСЃРѕРІ (С‚РµРєСѓС‰Р°СЏ СЃСѓРјРјР°: " +
             std::to_string(A + B + C) + ")");
     }
 }
 
 void Triangle::print_info() const {
     Figure::print_info();
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << std::endl;
 }
