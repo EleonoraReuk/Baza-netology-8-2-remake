@@ -3,7 +3,7 @@
 #include <iostream>
 
 Quadrilateral::Quadrilateral(int a, int b, int c, int d, int A, int B, int C, int D)
-    : Figure("Четырёхугольник"), a(a), b(b), c(c), d(d), A(A), B(B), C(C), D(D) {
+    : Figure("Р§РµС‚С‹СЂС‘С…СѓРіРѕР»СЊРЅРёРє"), a(a), b(b), c(c), d(d), A(A), B(B), C(C), D(D) {
     validate();
 }
 
@@ -21,19 +21,19 @@ bool Quadrilateral::check_sum_angles() const {
 
 void Quadrilateral::validate() const {
     if (!check_sides()) {
-        throw FigureException(name, "Все стороны должны быть положительными числами");
+        throw FigureException(name, "Р’СЃРµ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё С‡РёСЃР»Р°РјРё");
     }
     if (!check_angles()) {
-        throw FigureException(name, "Углы должны быть положительными и меньше 360 градусов");
+        throw FigureException(name, "РЈРіР»С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РїРѕР»РѕР¶РёС‚РµР»СЊРЅС‹РјРё Рё РјРµРЅСЊС€Рµ 360 РіСЂР°РґСѓСЃРѕРІ");
     }
     if (!check_sum_angles()) {
-        throw FigureException(name, "Сумма углов должна равняться 360 градусов (текущая сумма: " +
+        throw FigureException(name, "РЎСѓРјРјР° СѓРіР»РѕРІ РґРѕР»Р¶РЅР° СЂР°РІРЅСЏС‚СЊСЃСЏ 360 РіСЂР°РґСѓСЃРѕРІ (С‚РµРєСѓС‰Р°СЏ СЃСѓРјРјР°: " +
             std::to_string(A + B + C + D) + ")");
     }
 }
 
 void Quadrilateral::print_info() const {
     Figure::print_info();
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
 }
