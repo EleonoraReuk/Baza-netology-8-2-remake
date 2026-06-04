@@ -1,13 +1,13 @@
 #include "FigureException.h"
 
 FigureException::FigureException(const std::string& figure_name, const std::string& error_reason)
-    : std::logic_error("Ошибка создания фигуры"),
+    : std::logic_error("РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ С„РёРіСѓСЂС‹"),
     figure_name(figure_name),
     error_reason(error_reason) {
 }
 
 const char* FigureException::what() const noexcept {
-    static std::string message = "Ошибка создания " + figure_name + ": " + error_reason;
+    static std::string message = "РћС€РёР±РєР° СЃРѕР·РґР°РЅРёСЏ " + figure_name + ": " + error_reason;
     return message.c_str();
 }
 
