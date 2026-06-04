@@ -8,15 +8,15 @@ EquilateralTriangle::EquilateralTriangle(int side)
 void EquilateralTriangle::validate() const {
     Triangle::validate();
     if (a != b || b != c) {
-        throw FigureException("Равносторонний треугольник", "Все стороны должны быть равны");
+        throw FigureException("Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", "Р’СЃРµ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
     if (A != 60 || B != 60 || C != 60) {
-        throw FigureException("Равносторонний треугольник", "Все углы должны быть равны 60 градусов");
+        throw FigureException("Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", "Р’СЃРµ СѓРіР»С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹ 60 РіСЂР°РґСѓСЃРѕРІ");
     }
 }
 
 void EquilateralTriangle::print_info() const {
-    std::cout << "Равносторонний треугольник:" << std::endl;
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << std::endl;
+    std::cout << "Р Р°РІРЅРѕСЃС‚РѕСЂРѕРЅРЅРёР№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << std::endl;
 }
