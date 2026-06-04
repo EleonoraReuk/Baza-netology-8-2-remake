@@ -8,15 +8,15 @@ Rectangle::Rectangle(int a, int b)
 void Rectangle::validate() const {
     Quadrilateral::validate();
     if (a != c || b != d) {
-        throw FigureException("Прямоугольник", "Противоположные стороны должны быть равны");
+        throw FigureException("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє", "РџСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅС‹Рµ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
     if (A != 90 || B != 90 || C != 90 || D != 90) {
-        throw FigureException("Прямоугольник", "Все углы должны быть 90 градусов");
+        throw FigureException("РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє", "Р’СЃРµ СѓРіР»С‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ 90 РіСЂР°РґСѓСЃРѕРІ");
     }
 }
 
 void Rectangle::print_info() const {
-    std::cout << "Прямоугольник:" << std::endl;
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
+    std::cout << "РџСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРє:" << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << " d=" << d << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << " D=" << D << std::endl;
 }
