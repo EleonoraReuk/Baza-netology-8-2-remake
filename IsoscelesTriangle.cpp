@@ -8,15 +8,15 @@ IsoscelesTriangle::IsoscelesTriangle(int a, int b, int A, int B)
 void IsoscelesTriangle::validate() const {
     Triangle::validate();
     if (a != c) {
-        throw FigureException("Равнобедренный треугольник", "Боковые стороны должны быть равны");
+        throw FigureException("Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", "Р‘РѕРєРѕРІС‹Рµ СЃС‚РѕСЂРѕРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
     if (A != C) {
-        throw FigureException("Равнобедренный треугольник", "Углы при основании должны быть равны");
+        throw FigureException("Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє", "РЈРіР»С‹ РїСЂРё РѕСЃРЅРѕРІР°РЅРёРё РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЂР°РІРЅС‹");
     }
 }
 
 void IsoscelesTriangle::print_info() const {
-    std::cout << "Равнобедренный треугольник:" << std::endl;
-    std::cout << "Стороны: a=" << a << " b=" << b << " c=" << c << std::endl;
-    std::cout << "Углы: A=" << A << " B=" << B << " C=" << C << std::endl;
+    std::cout << "Р Р°РІРЅРѕР±РµРґСЂРµРЅРЅС‹Р№ С‚СЂРµСѓРіРѕР»СЊРЅРёРє:" << std::endl;
+    std::cout << "РЎС‚РѕСЂРѕРЅС‹: a=" << a << " b=" << b << " c=" << c << std::endl;
+    std::cout << "РЈРіР»С‹: A=" << A << " B=" << B << " C=" << C << std::endl;
 }
